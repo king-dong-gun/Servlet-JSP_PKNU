@@ -73,9 +73,9 @@ public class SingletonForm extends HttpServlet {
             application.setAttribute("appNum", appNum);   // 숫자 저장
             application.setAttribute("appOp", appOp);     // 연산자 저장
             // 뒤로가기
-            request.getRequestDispatcher("/day04/singletonForm.html");
-            // 페이지 전환 없음
-            // request.getRequestDispatcher("/day04/singletonForm.html").forward(request, response);
+//            request.getRequestDispatcher("/day04/singletonForm.html");
+//             페이지 전환 없음
+             request.getRequestDispatcher("/day04/singletonForm.html").forward(request, response);
         }
     }
 }

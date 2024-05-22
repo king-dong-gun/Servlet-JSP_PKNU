@@ -166,3 +166,9 @@ public class SingletonForm extends HttpServlet {
 ![singleton2](https://github.com/king-dong-gun/Spring_PKUN/assets/160683545/6901bd58-9c91-44d8-bca4-3fd232233741)
 
 
+
+#### session
+- 자바 서블릿은 `HttpSession`이라는 인터페이스를 가지고 있다.
+  - 검색, 저장, 삭제의 기능을 가지고 있다
+- `getSession`을 통해 새션 객체에 접근하며, `HttpSessionRequest 객체를 이용한다.
+

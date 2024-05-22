@@ -11,24 +11,25 @@ import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 
 
-@WebServlet("/app")
-public class ApplicationTest extends HttpServlet {
+@WebServlet("/sessionTest")
+public class SessionTest extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // Application 저장소 생성
-        ServletContext application = request.getServletContext();
-
+        // 새션 저장소 생성
+        HttpSession session = request.getSession();
         String data = request.getParameter("data");
 
         // 확인
-        System.out.println("data1 = " + data);
-        // 저장
-        application.setAttribute("data", data);
-        // 꺼내기
-        application.getAttribute("data");
+        System.out.println("data: " + data);
 
-        System.out.println("data2 = " + data);
+        // 저장
+        session.setAttribute("data", data);
+
+        // 꺼내기
+        session.getAttribute("data");
+
+        System.out.println("data2: " + data);
 
     }
 }
