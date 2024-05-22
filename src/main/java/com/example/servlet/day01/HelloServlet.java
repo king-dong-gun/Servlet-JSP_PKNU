@@ -1,4 +1,4 @@
-package com.example.servlet;
+package com.example.servlet.day01;
 
 import java.io.*;
 

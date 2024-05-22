@@ -59,8 +59,47 @@
 
 
 ### 서블릿 시작
+- 서블릿은 서버쪽에서 실행되어 클라이언트의 요청에 따라 동적으로 서비스를 제공하는 자바 클래스이다.
+  - 독자적인 실행은 불가능하고 톰캣과 같은 JSP/Servlet 컨테이너에서 실행된다.
+
+#### 클라이언트가 서버에 요청
+- `get`: 주소창을 타고 넘어가 서버로 보내는 데이터가 주소창에 노출되기 때문에 보안에 취약하다.
+  - 255이하의 적은 양의 데이터를 전송한다.
+- `post`: html header를 타고 넘어가 보안에 강하다.
+  - 255이상의 대용량 데이터를 전송한다.
+#### get
+```html
+<form method="get" action="calc"></form>
+```
+#### post
+````html
+<form method="post" action="calc"></form>
+````
+
+#### 요청 방식에 따라 호출되는 메서드
+- `doGet()`: `get`방식으로 요청시 호출되는 메서드
+- `doPost()`: `post`방식으로 요청시 호출되는 메서드
+
+#### doGet
+````java
+public void doGet(HttpServletRequset requset, HttpServletResponse response) throws IOException, ServletException {
+    // HttpServletRequest: 요청처리
+    // HttpServletResponse: 응답처리
+    // IOException, ServletException: 예외처리
+}
+````
+#### doPost
+```java
+
+public void doPost(HttpServletRequset requset, HttpServletResponse response) throws IOException, ServletException {
+    // HttpServletRequest: 요청처리
+    // HttpServletResponse: 응답처리
+    // IOException, ServletException: 예외처리
+}
+```
 
 
+#### 요청 보내기, 응답하기
 ```java
 package com.example.servlet;
 

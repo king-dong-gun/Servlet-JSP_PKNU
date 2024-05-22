@@ -1,6 +1,5 @@
-package com.example.servlet;
+package com.example.servlet.day01;
 
-import com.sun.net.httpserver.HttpServer;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
