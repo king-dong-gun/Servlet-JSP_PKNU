@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>CookieForm</title>
+</head>
+<body>
+<form method="post" action="/cook">
+    <div>
+        <label for="num">Number :</label>
+        <input type="text" id="num" name="num">
+    </div>
+    <div>
+        <input type="submit" name="operation" value="+">
+        <input type="submit" name="operation" value="-">
+        <input type="submit" name="operation" value="*">
+        <input type="submit" name="operation" value="/">
+        <input type="submit" name="operation" value="=">
+    </div>
+    <div><span>쿠키생성: new Cookie()</span>
+    <span>쿠키전송: addCookie()</span>
+    <span>쿠키읽기: getCookie()</span>
+    </div>
+</form>
+</body>
+</html>
