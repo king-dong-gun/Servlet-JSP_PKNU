@@ -412,7 +412,8 @@ public class BeanTest {
 - jsp 페이지에서 빈 속성 값을 사용하여 연산을 수행하고 결과를 출력한다.
 
 
-![jspCalc](https://github.com/king-dong-gun/Servlet-JSP_PKUN/assets/160683545/6a102bdb-f462-4586-bf94-a8a83f5062b9)
+![jspCalc](https://github.com/king-dong-gun/Servlet-JSP_PKUN/assets/160683545/e131079a-6eae-4a9d-8e5e-05df9e7e078f)
+
 
 
 
